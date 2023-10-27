@@ -112,6 +112,46 @@ void Props::Load()
 		glm::vec3(0.0f, 0.0f, 0.0f));
 
 	AddModelPos({ 32.5f, 0.0f, 38.0f });
+	
+	//Tool Table
+	SetCurrentModel("Assets/Models/Props/SM_Prop_Cart_01_xyz_n_rgba_uv_flatshaded_xyz_n_uv.ply",
+		glm::vec3(0.0f, 0.0f, 0.0f));
+
+	AddModelPos({ 30.0f, 0.0f, 23.0f });
+
+	//Tools
+
+	SetCurrentModel("Assets/Models/Props/SM_Prop_Battery_01_xyz_n_rgba_uv_flatshaded_xyz_n_uv.ply",
+			glm::vec3(0.0f, 0.0f, 0.0f));
+
+	AddModelPos({ 32.0f, 0.0f, 23.0f });
+	
+	SetCurrentModel("Assets/Models/Props/SM_Item_Wrench_01_xyz_n_rgba_uv_flatshaded_xyz_n_uv.ply",
+			glm::vec3(-90.0f, 0.0f, 30.0f));
+
+	AddModelPos({ 30.5f, 1.2f, 22.5f });
+	
+	SetCurrentModel("Assets/Models/Props/SM_Item_Hammer_01_xyz_n_rgba_uv_flatshaded_xyz_n_uv.ply",
+			glm::vec3(-90.0f, 0.0f, -15.0f));
+
+	AddModelPos({ 29.5f, 1.2f, 23.0f });
+
+
+	//Tape
+
+	SetCurrentModel("Assets/Models/Props/SM_Prop_Tape_01_xyz_n_rgba_uv_flatshaded_xyz_n_uv.ply",
+		glm::vec3(0.0f, 0.0f, 0.0f));
+
+	AddModelPos({ 30.0f, 0.0f, 13.0f });
+	AddModelPos({ 35.0f, 0.0f, 13.0f });
+	AddModelPos({ 40.0f, 0.0f, 13.0f });
+
+	SetCurrentModel("Assets/Models/Props/SM_Prop_Tape_01_xyz_n_rgba_uv_flatshaded_xyz_n_uv.ply",
+		glm::vec3(0.0f, 90.0f, 0.0f));
+
+	AddModelPos({ 27.5f, 0.0f, 10.5f });
+	AddModelPos({ 27.5f , 0.0f, 10.5f - 5.0f });
+	
 
 	//Lockers
 
