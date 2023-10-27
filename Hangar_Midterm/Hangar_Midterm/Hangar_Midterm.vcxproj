@@ -157,6 +157,7 @@
     <ClInclude Include="src\Lights.h" />
     <ClInclude Include="src\HangarApplication.h" />
     <ClInclude Include="src\Utilities\Random.h" />
+    <ClInclude Include="src\Utilities\Remap.h" />
     <ClInclude Include="src\Walls.h" />
     <ClInclude Include="src\Walkway.h" />
     <ClInclude Include="src\Stars.h" />

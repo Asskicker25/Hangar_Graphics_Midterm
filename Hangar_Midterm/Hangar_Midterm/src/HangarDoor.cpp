@@ -65,12 +65,14 @@ void HangarDoor::OpenDoor()
 {
 	openingDoor = true;
 	closingDoor = false;
+	lights->SetLightAnimState(true);
 }
 
 void HangarDoor::CloseDoor()
 {
 	closingDoor = true;
 	openingDoor = false;
+	lights->SetLightAnimState(true);
 }
 
 
@@ -82,6 +84,7 @@ void HangarDoor::UpdateDoorPosition(float deltaTime)
 
 	if (openingDoor)
 	{
+
 		for (int i = 0; i < 5; i++)
 		{
 			if (rightFirstPanel[i]->transform.position.z < 15.0f)
@@ -92,6 +95,7 @@ void HangarDoor::UpdateDoorPosition(float deltaTime)
 			if (rightFirstPanel[i]->transform.position.z < 8.0f)
 			{
 				openingDoor = false;
+				lights->SetLightAnimState(false);
 			}
 			//Middle Panels
 			rightFirstPanel[i]->transform.position.z -= firstPanelSpeed * deltaTime;
@@ -115,6 +119,7 @@ void HangarDoor::UpdateDoorPosition(float deltaTime)
 			if (rightFirstPanel[i]->transform.position.z > 20.0f)
 			{
 				closingDoor = false;
+				lights->SetLightAnimState(false);
 			}
 			//Middle Panels
 

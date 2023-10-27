@@ -1,6 +1,5 @@
 #include "HangarApplication.h"
 #include "Walls.h"
-#include "Lights.h"
 #include "FloorAndCeiling.h"
 #include "Walkway.h"
 #include "Props.h"
@@ -20,7 +19,7 @@ void HangarApplication::SetUp()
 #pragma endregion
 
 
-	Lights* lights = new Lights();
+	lights = new Lights();
 	lights->AssignRenderer(&renderer, &lightShader, &lightManager);
 	lights->Load();
 
@@ -45,6 +44,7 @@ void HangarApplication::SetUp()
 	hangarDoor = new HangarDoor();
 	hangarDoor->AssignRenderer(&renderer, &defShader);
 	hangarDoor->Load();
+	hangarDoor->lights = lights;
 
 	Stars* stars = new Stars();
 	stars->AssignRenderer(&renderer, &lightShader);
@@ -61,6 +61,7 @@ void HangarApplication::PreRender()
 void HangarApplication::PostRender()
 {
 	hangarDoor->UpdateDoorPosition(deltaTime);
+	lights->UpdateLights(deltaTime);
 }
 
 void HangarApplication::ProcessInput(GLFWwindow* window)

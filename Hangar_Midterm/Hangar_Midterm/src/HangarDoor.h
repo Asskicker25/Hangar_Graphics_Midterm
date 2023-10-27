@@ -1,6 +1,7 @@
 #pragma once
 
 #include "LoaderBase.h"
+#include "Lights.h"
 
 class HangarDoor : public LoaderBase
 {
@@ -17,6 +18,8 @@ public:
 	std::vector<Model*> rightSecondPanel;
 	std::vector<Model*> leftFirstPanel;
 	std::vector<Model*> leftSecondPanel;
+
+	Lights* lights;
 
 	// Inherited via LoaderBase
 	void Load() override;

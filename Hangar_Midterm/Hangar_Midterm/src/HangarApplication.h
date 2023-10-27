@@ -2,11 +2,13 @@
 
 #include <Graphics/ApplicationWindow.h>
 #include "HangarDoor.h"
+#include "Lights.h"
 
 class HangarApplication : public ApplicationWindow
 {
 public:
 	HangarDoor* hangarDoor;
+	Lights* lights;
 
 	// Inherited via ApplicationWindow
 	void SetUp() override;
