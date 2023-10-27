@@ -75,6 +75,30 @@ void Props::Load()
 
 	AddModelPos({ largeTablePos.x , largeTablePos.y + 1.5f, largeTablePos.z  });
 	
+	SetCurrentModel("Assets/Models/Props/SM_Prop_Panel_Vintage_05_xyz_n_rgba_uv_flatshaded_xyz_n_uv.ply",
+		glm::vec3(0.0f, -30.0f, 0.0f));
+
+	AddModelPos({ largeTablePos.x - 1.0f , largeTablePos.y + 1.5f, largeTablePos.z  });
+	
+	SetCurrentModel("Assets/Models/Props/SM_Prop_Phone_01_xyz_n_rgba_uv_flatshaded_xyz_n_uv.ply",
+		glm::vec3(0.0f, -30.0f, 0.0f));
+
+	AddModelPos({ largeTablePos.x + 1.0f , largeTablePos.y + 1.5f, largeTablePos.z + 0.2f });
+
+	//Chair
+	SetCurrentModel("Assets/Models/Props/SM_Prop_Seat_01_xyz_n_rgba_uv_flatshaded_xyz_n_uv.ply",
+		glm::vec3(0.0f, -210.0f, 0.0f));
+
+	AddModelPos({ largeTablePos.x - 1.0f , largeTablePos.y , largeTablePos.z + 2.0f });
+
+	SetCurrentModel("Assets/Models/Props/SM_Prop_Seat_01_xyz_n_rgba_uv_flatshaded_xyz_n_uv.ply",
+		glm::vec3(0.0f, -90.0f, 0.0f));
+
+	for (int i = 0; i < 6; i++)
+	{
+		AddModelPos({ 54.0f, 0.0f, 23.0f + ( 2.5f  * i)});
+	}
+	
 
 	//Plants
 	SetCurrentModel("Assets/Models/Props/SM_Prop_Plants_01_xyz_n_rgba_uv_flatshaded_xyz_n_uv.ply",
@@ -84,11 +108,28 @@ void Props::Load()
 	AddModelPos( { 35.2f, 0.0f, 39.5f });
 
 
-
 	SetCurrentModel("Assets/Models/Props/SM_Prop_Plants_03_xyz_n_rgba_uv_flatshaded_xyz_n_uv.ply",
 		glm::vec3(0.0f, 0.0f, 0.0f));
 
 	AddModelPos({ 32.5f, 0.0f, 38.0f });
+
+	//Lockers
+
+	SetCurrentModel("Assets/Models/Props/SM_Prop_Lockers_02_xyz_n_rgba_uv_flatshaded_xyz_n_uv.ply",
+		glm::vec3(0.0f, 0.0f, 0.0f));
+
+	AddModelPos({ 22.5f, 0.0f, 0.5f });
+	AddModelPos({ 25.0f, 0.0f, 00.5f });
+
+	SetCurrentModel("Assets/Models/Props/SM_Prop_Lockers_04_xyz_n_rgba_uv_flatshaded_xyz_n_uv.ply",
+		glm::vec3(0.0f, 0.0f, 0.0f));
+
+	AddModelPos({ 27.5f, 0.0f, 0.5f });
+	AddModelPos({ 30.0f, 0.0f, 00.5f });
+	
+
+	
+
 
 	//Control Desk
 	SetCurrentModel("Assets/Models/Props/SM_Prop_ControlDesk_03_xyz_n_rgba_uv_flatshaded_xyz_n_uv.ply",
