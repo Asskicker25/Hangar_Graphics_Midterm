@@ -2,7 +2,7 @@
 
 #include <random>
 
-static const float& GetRandomFloatNumber(float minValue, float maxValue)
+static const float GetRandomFloatNumber(float minValue, float maxValue)
 {
 	std::random_device rd;  
 	std::mt19937 gen(rd()); 

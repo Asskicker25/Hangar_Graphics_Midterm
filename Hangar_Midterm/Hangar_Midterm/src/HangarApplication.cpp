@@ -21,7 +21,7 @@ void HangarApplication::SetUp()
 
 
 	Lights* lights = new Lights();
-	lights->AssignRenderer(&renderer, &defShader, &lightManager);
+	lights->AssignRenderer(&renderer, &lightShader, &lightManager);
 	lights->Load();
 
 	lightManager.AddShader(defShader);

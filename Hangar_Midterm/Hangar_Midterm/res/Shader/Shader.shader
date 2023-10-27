@@ -206,7 +206,7 @@ vec3 CalcSpotLight(Light light, vec3 texColor, vec3 ambientColor, vec3 normal, v
 	vec3 lightDir = normalize(light.position - fragPos);
 	
 	float _distance = length(light.position - fragPos);
-    float attenuation = 1.0 / (light.atten.x + light.atten.y * _distance + light.atten.z * (_distance * _distance));   
+    float attenuation = max(0.0,1.0 / (light.atten.x + light.atten.y * _distance + light.atten.z * (_distance * _distance)));   
 	
 	// spotlight intensity
 	float outerConeAngleCos = cos(radians(light.type_innerAngle_outerAngle_w.z));

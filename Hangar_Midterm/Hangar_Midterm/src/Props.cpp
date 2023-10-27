@@ -128,8 +128,29 @@ void Props::Load()
 	AddModelPos({ 30.0f, 0.0f, 00.5f });
 	
 
+	//Ceilig Lights
+	SetCurrentModel("Assets/Models/Props/SM_Prop_Light_01_xyz_n_rgba_uv_flatshaded_xyz_n_uv.ply",
+		glm::vec3(0.0f, 0.0f, 0.0f));
 	
+	for (int i = 0; i < 6; i++)
+	{
+		float xValue;
+		if (i % 2 == 0)
+		{
+			xValue = 30.0f;
+		}
+		else
+		{
+			xValue = 20.0f;
+		}
+		AddModelPos({ xValue, 25.0f, 32.5f - ( i * 5.0f)});
+	}
 
+	//Walkway lights
+	SetCurrentModel("Assets/Models/Props/SM_Env_Ceiling_Light_04_xyz_n_rgba_uv_flatshaded_xyz_n_uv.ply",
+		glm::vec3(0.0f, 23.0f, 0.0f));
+
+	AddModelPos({ 35.25f,10.0f, 20.0f });
 
 	//Control Desk
 	SetCurrentModel("Assets/Models/Props/SM_Prop_ControlDesk_03_xyz_n_rgba_uv_flatshaded_xyz_n_uv.ply",
