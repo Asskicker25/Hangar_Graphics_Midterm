@@ -4,7 +4,7 @@ int main()
 {
 	HangarApplication hangarWindow;
 
-	hangarWindow.InitializeWindow(800, 600);
+	hangarWindow.InitializeWindow(1366, 728);
 
 	Debugger::print = true;
 

@@ -33,6 +33,12 @@
     <ClCompile Include="src\LoaderBase.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\FloorAndCeiling.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Walkway.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\HangarApplication.h">
@@ -45,6 +51,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\LoaderBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FloorAndCeiling.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Walkway.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

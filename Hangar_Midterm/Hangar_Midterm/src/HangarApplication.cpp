@@ -1,6 +1,8 @@
 #include "HangarApplication.h"
 #include "Walls.h"
 #include "Lights.h"
+#include "FloorAndCeiling.h"
+#include "Walkway.h"
 
 void HangarApplication::SetUp()
 {
@@ -9,7 +11,7 @@ void HangarApplication::SetUp()
 	
 	camera.InitializeCamera(PERSPECTIVE, windowWidth, windowHeight, 0.1f, 300.0f,45.0f);
 
-	cameraPos = glm::vec3(30.0f,0, 30.0f);
+	cameraPos = glm::vec3(30.0f,12.5f, 30.0f);
 
 #pragma endregion
 
@@ -23,6 +25,15 @@ void HangarApplication::SetUp()
 	Walls* walls = new Walls();
 	walls->AssignRenderer(&renderer, &defShader);
 	walls->Load();
+
+	FloorAndCeiling* floorAndCeiling = new FloorAndCeiling();
+	floorAndCeiling->AssignRenderer(&renderer, &defShader);
+	floorAndCeiling->Load();
+
+	Walkway* walkway = new Walkway();
+	walkway->AssignRenderer(&renderer, &defShader);
+	walkway->Load();
+
 
 
 	/*Model* wall = new Model("Assets/Models/Walls/SM_Env_Construction_Wall_01_xyz_n_rgba_uv_flatshaded_xyz_n.ply");

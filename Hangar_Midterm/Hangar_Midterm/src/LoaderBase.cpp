@@ -26,7 +26,7 @@ void LoaderBase::AddModelPos(ModelPos modelPos)
 
 void LoaderBase::SetCurrentModel(const std::string& path, glm::vec3 rotation)
 {
-	Model* obj = new Model("Assets/Models/Walls/SM_Env_Construction_Wall_01_xyz_n_rgba_uv_flatshaded_xyz_n_rgba_uv.ply");
+	Model* obj = new Model(path);
 	obj->transform.SetRotation(rotation);
 	currentModel = obj;
 }

@@ -15,10 +15,14 @@ void Lights::Load()
 {
 	Model* dirLightModel = new Model("Assets/Models/DefaultSphere.fbx");
 	dirLightModel->transform.SetScale(glm::vec3(0.5f));
+	dirLightModel->transform.SetPosition(glm::vec3(30.0f, 20.0f, 30.0f));
+
 	listOfModels.push_back(dirLightModel);
 
 	Light* dirLight = new Light();
-	dirLight->InitializeLight(dirLightModel, Directional);
+	dirLight->InitializeLight(dirLightModel, Point);
+	dirLight->attenuation = glm::vec4(1.0f, 0.01f, 0.001f, 30.0f);
+	dirLight->intensity = 1.0f;
 	listOfLights.push_back(dirLight);
 
 	AddToRenderers();

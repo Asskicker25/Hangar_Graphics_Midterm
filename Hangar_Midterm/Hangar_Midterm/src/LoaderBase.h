@@ -20,6 +20,5 @@ public:
 
 	virtual ~LoaderBase() {};
 	virtual void Load() = 0;
-
 };
 
