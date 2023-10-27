@@ -24,9 +24,19 @@ void LoaderBase::AddModelPos(ModelPos modelPos)
 	this->modelPos.push_back({ currentModel, modelPos });
 }
 
-void LoaderBase::SetCurrentModel(const std::string& path, glm::vec3 rotation)
+void LoaderBase::SetCurrentModel(const std::string& path, glm::vec3 rotation, glm::vec3 scale, bool loadMaterials)
 {
-	Model* obj = new Model(path);
+	Model* obj;
+	if (!loadMaterials)
+	{
+		obj = new Model(path, false, loadMaterials);
+	}
+	else
+	{
+		obj = new Model(path, true, true);
+	}
+
 	obj->transform.SetRotation(rotation);
+	obj->transform.SetScale(scale);
 	currentModel = obj;
 }

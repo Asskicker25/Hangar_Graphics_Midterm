@@ -4,6 +4,7 @@
 #include "FloorAndCeiling.h"
 #include "Walkway.h"
 #include "Props.h"
+#include "Stars.h"
 
 void HangarApplication::SetUp()
 {
@@ -45,6 +46,9 @@ void HangarApplication::SetUp()
 	hangarDoor->AssignRenderer(&renderer, &defShader);
 	hangarDoor->Load();
 
+	Stars* stars = new Stars();
+	stars->AssignRenderer(&renderer, &lightShader);
+	stars->Load();
 	/*Model* wall = new Model("Assets/Models/Walls/SM_Env_Construction_Wall_01_xyz_n_rgba_uv_flatshaded_xyz_n.ply");
 
 	renderer.AddModel(wall, &defShader);*/
@@ -70,6 +74,10 @@ void HangarApplication::KeyCallBack(GLFWwindow* window, int& key, int& scancode,
 		if (key == GLFW_KEY_SPACE)
 		{
 			hangarDoor->OpenDoor();
+		}
+		else if (key == GLFW_KEY_ENTER)
+		{
+			hangarDoor->CloseDoor ();
 		}
 	}
 }

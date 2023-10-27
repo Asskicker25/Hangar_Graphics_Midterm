@@ -147,6 +147,7 @@
     <ClCompile Include="src\ModePos.h" />
     <ClCompile Include="src\Walls.cpp" />
     <ClCompile Include="src\Walkway.cpp" />
+    <ClCompile Include="src\Stars.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\HangarDoor.h" />
@@ -155,8 +156,10 @@
     <ClInclude Include="src\LoaderBase.h" />
     <ClInclude Include="src\Lights.h" />
     <ClInclude Include="src\HangarApplication.h" />
+    <ClInclude Include="src\Utilities\Random.h" />
     <ClInclude Include="src\Walls.h" />
     <ClInclude Include="src\Walkway.h" />
+    <ClInclude Include="src\Stars.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

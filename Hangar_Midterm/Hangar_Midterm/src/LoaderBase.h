@@ -16,7 +16,7 @@ public:
 	void AssignRenderer(Renderer* renderer, Shader* shader);
 	void AddToRenderers();
 	void AddModelPos(ModelPos modelPos);
-	void SetCurrentModel(const std::string& path, glm::vec3 rotation);
+	void SetCurrentModel(const std::string& path, glm::vec3 rotation, glm::vec3 scale = glm::vec3(1.0f), bool loadMaterials = true);
 
 	virtual ~LoaderBase() {};
 	virtual void Load() = 0;

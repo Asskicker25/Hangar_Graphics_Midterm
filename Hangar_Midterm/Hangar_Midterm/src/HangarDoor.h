@@ -7,6 +7,8 @@ class HangarDoor : public LoaderBase
 private:
 
 	bool openingDoor = false; 
+	bool closingDoor = false; 
+
 	float firstPanelSpeed = 1.0f;
 	float secondPanelSpeed = 1.0f;
 
@@ -20,6 +22,7 @@ public:
 	void Load() override;
 
 	void OpenDoor();
+	void CloseDoor();
 	void UpdateDoorPosition(float deltaTime);
 };
 
