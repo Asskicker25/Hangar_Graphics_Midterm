@@ -2,7 +2,7 @@
 
 void FloorAndCeiling::Load()
 {
-	SetCurrentModel("Assets/Models/FloorAndCeiling/SM_Env_Floor_01_xyz_n_rgba_uv_flatshaded_xyz_n_rgba_uv.ply",
+	SetCurrentModel("Assets/Models/FloorAndCeiling/SM_Env_Floor_01_xyz_n_rgba_uv_flatshaded_xyz_n_uv.ply",
 		glm::vec3(0.0f, 90.0f, 0.0f));
 
 	//Floor
@@ -14,7 +14,7 @@ void FloorAndCeiling::Load()
 		}
 	}
 
-	SetCurrentModel("Assets/Models/FloorAndCeiling/SM_Env_Ceiling_01_xyz_n_rgba_uv_flatshaded_xyz_n_rgba_uv.ply",
+	SetCurrentModel("Assets/Models/FloorAndCeiling/SM_Env_Ceiling_01_xyz_n_rgba_uv_flatshaded_xyz_n_uv.ply",
 		glm::vec3(0.0f, 90.0f, 0.0f));
 
 

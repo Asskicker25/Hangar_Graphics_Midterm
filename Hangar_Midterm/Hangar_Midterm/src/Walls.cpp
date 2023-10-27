@@ -3,7 +3,7 @@
 
 void Walls::Load()
 {
-	SetCurrentModel("Assets/Models/Walls/SM_Env_Construction_Wall_01_xyz_n_rgba_uv_flatshaded_xyz_n_rgba_uv.ply",
+	SetCurrentModel("Assets/Models/Walls/SM_Env_Construction_Wall_01_xyz_n_rgba_uv_flatshaded_xyz_n_uv.ply",
 		glm::vec3(0.0f, 0.0f, 0.0f));
 
 
@@ -18,7 +18,7 @@ void Walls::Load()
 		AddModelPos({ 50,i * 5.0f,0 });
 	}
 
-	SetCurrentModel("Assets/Models/Walls/SM_Env_Construction_Wall_01_xyz_n_rgba_uv_flatshaded_xyz_n_rgba_uv.ply",
+	SetCurrentModel("Assets/Models/Walls/SM_Env_Construction_Wall_01_xyz_n_rgba_uv_flatshaded_xyz_n_uv.ply",
 		glm::vec3(0.0f, 180.0f, 0.0f));
 
 	//Left Wall
@@ -32,7 +32,7 @@ void Walls::Load()
 		AddModelPos({ 60,i * 5.0f, 40.0f });
 	}
 
-	SetCurrentModel("Assets/Models/Walls/SM_Env_Construction_Wall_01_xyz_n_rgba_uv_flatshaded_xyz_n_rgba_uv.ply",
+	SetCurrentModel("Assets/Models/Walls/SM_Env_Construction_Wall_01_xyz_n_rgba_uv_flatshaded_xyz_n_uv.ply",
 		glm::vec3(0.0f, -90.0f, 0.0f));
 
 	//Back wall
