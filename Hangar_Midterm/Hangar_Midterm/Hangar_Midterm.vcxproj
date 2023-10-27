@@ -137,6 +137,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\HangarDoor.cpp" />
+    <ClCompile Include="src\Props.cpp" />
     <ClCompile Include="src\FloorAndCeiling.cpp" />
     <ClCompile Include="src\LoaderBase.cpp" />
     <ClCompile Include="src\Lights.cpp" />
@@ -147,6 +149,8 @@
     <ClCompile Include="src\Walkway.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\HangarDoor.h" />
+    <ClInclude Include="src\Props.h" />
     <ClInclude Include="src\FloorAndCeiling.h" />
     <ClInclude Include="src\LoaderBase.h" />
     <ClInclude Include="src\Lights.h" />

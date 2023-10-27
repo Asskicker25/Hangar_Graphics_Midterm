@@ -1,10 +1,12 @@
 #pragma once
 
 #include <Graphics/ApplicationWindow.h>
-
+#include "HangarDoor.h"
 
 class HangarApplication : public ApplicationWindow
 {
+public:
+	HangarDoor* hangarDoor;
 
 	// Inherited via ApplicationWindow
 	void SetUp() override;
