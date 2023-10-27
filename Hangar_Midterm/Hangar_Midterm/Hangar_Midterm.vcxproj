@@ -137,11 +137,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\LoaderBase.cpp" />
+    <ClCompile Include="src\Lights.cpp" />
     <ClCompile Include="src\HangarApplication.cpp" />
     <ClCompile Include="src\Application.cpp" />
+    <ClCompile Include="src\ModePos.h" />
+    <ClCompile Include="src\Walls.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\LoaderBase.h" />
+    <ClInclude Include="src\Lights.h" />
     <ClInclude Include="src\HangarApplication.h" />
+    <ClInclude Include="src\Walls.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

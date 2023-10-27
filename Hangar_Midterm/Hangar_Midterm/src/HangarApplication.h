@@ -2,9 +2,9 @@
 
 #include <Graphics/ApplicationWindow.h>
 
+
 class HangarApplication : public ApplicationWindow
 {
-
 
 	// Inherited via ApplicationWindow
 	void SetUp() override;
